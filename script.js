@@ -17,6 +17,18 @@ document.getElementById("baseSelector").addEventListener("submit", function (e) 
         return;
     }
 
-    
+    //Now, creating a smoothie object to store the smoothie details , all the ingredients that the user has selected + the notes and the price of the smoothie 
+    const smoothie = {
+        name: `${base} Smoothie`,
+        base: base,
+        fruits: fruits,
+        boosters: boosters,
+        sweetness: sweetness,
+        notes: notes,
+        price: calculatePrice(base, fruits, boosters) // Pricing logic
+    };
+
+    //A custom function to display the smoothie result to the customer with full price and image along with details.
+    displaySmoothie(smoothie);
 });
 
