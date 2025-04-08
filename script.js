@@ -9,5 +9,14 @@ document.getElementById("baseSelector").addEventListener("submit", function (e) 
     const sweetness = document.getElementById("sweetness").value;
     const notes = document.getElementById("notes").value;
 
+
+    // MAKING Sure that the user gets atleast one fruit ingredient in their smoothie 
+    // if not, we will alert the user to select at least one fruit 
+    if (fruits.length === 0) {
+        alert("Please select at least one fruit for your smoothie!.");
+        return;
+    }
+
+    
 });
 
