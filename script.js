@@ -60,7 +60,7 @@ function displaySmoothie(smoothie) {
 
 // Creating another js object to store paths of images of fruits that are used in smoothies, so that we can display them in result section.
 const fruitImages = {
-    "Strawberry": "..images/Strawberry.jpeg", 
+    "Strawberry":"images/Strawberry.jpeg", 
     "Banana": "images/Banana.jpeg",
     "Mango": "images/Mango.jpeg",
     "Blueberry": "images/Blueberry.jpeg",
