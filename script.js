@@ -34,10 +34,10 @@ document.getElementById("baseSelector").addEventListener("submit", function (e) 
 
 // Creating another js object to the paths of the images of the fruits that are used in the smoothie, so that we can display them in the smoothie result section.
 const fruitImages = {
-    "Strawberry": "images/Strawberry.jpeg", 
-    "Banana": "images/Banana.jpeg",
-    "Mango": "images/Mango.jpeg",
-    "Blueberry": "images/Blueberry.jpeg",
-    "Apple": "images/Apple.jpeg"
+    "Strawberry": "/images/Strawberry.jpeg", 
+    "Banana": "/images/Banana.jpeg",
+    "Mango": "/images/Mango.jpeg",
+    "Blueberry": "/images/Blueberry.jpeg",
+    "Apple": "/images/Apple.jpeg"
 };
 
