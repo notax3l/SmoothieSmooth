@@ -82,6 +82,47 @@
                     </div>
                 </section>
 
+                <!-- Giving user a text area to enter some notes -->
+                <section class="formForAll">
+                    <h2>Special Instructions</h2>
+                    <div class="inputNote">
+                        <label for="notes">Additional notes (optional)</label>
+                        <textarea id="notes"></textarea>
+                    </div>
+                </section>
+
+                <!-- Final submit buttons for the order ....2 options ....order smoothie and reset to reset the selections  -->
+                <section class="submitButtons">
+                    <button type="submit" id="orderButton">Create My Smoothie</button>
+                    <button type="reset" id="resetButton">Reset</button>
+                </section>
+            </form>
+
+            <!-- THE CONTENT ABOVE WILL BE VISIBLE TO THE USERS/CUSTOMERS WHENT THEY VISIT THE HOSTED PAGE..HOWEVER THE CONTENT BELLOW WILL BE HIDDEN UNTILL THE USER HITS CREATE SMOOTHIE BUTTON  -->
+            <!-- Result Section -->
+            <section class="finalSmoothie hidden">
+                <h2>Your Smoothie</h2>
+                <div class="smoothieDisplay">
+                    <div class="smoothie-visual" id="smoothie-images"></div>
+                    <div class="smoothieDetails">
+                        <h3></h3>
+                        <p class="smoothieDescription"></p>
+                    </div>
+                </div>
+
+                    <!-- Smoothie image conatiner that will show the smoothie image based on their selection -->
+                <div class="smoothieImage">
+                     <img id="smoothiePhoto" src="" alt="Smoothie Image" class="smoothie-image" />
+                </div>
+
+                <div class="orderDetails">
+                    <h3>Order Summary</h3>
+                    <div class="finalPriceDetail" id="finalPriceDetail"></div>
+                </div>
+
+                <button id="newOrder">Start a New Order</button>
+            </section>
+
             </main>
         </div>
 
