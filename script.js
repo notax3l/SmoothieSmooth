@@ -10,10 +10,10 @@ document.getElementById("baseSelector").addEventListener("submit", function (e) 
     const notes = document.getElementById("notes").value;
 
 
-    // MAKING Sure that the user gets atleast one fruit ingredient in their smoothie 
-    // if not, we will alert the user to select at least one fruit 
-    if (fruits.length === 0) {
-        alert("Please select at least one fruit for your smoothie!.");
+    // MAKING Sure that the user gets atleast one fruit ingredient in their smoothie and a base ingredient
+    // if not, we will alert the user to select at least one fruit and a base ingredient
+    if (!base || fruits.length === 0) {
+        alert("Please select at least a base and one fruit.");
         return;
     }
 
