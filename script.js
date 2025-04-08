@@ -25,7 +25,7 @@ document.getElementById("baseSelector").addEventListener("submit", function (e) 
         boosters: boosters,
         sweetness: sweetness,
         notes: notes,
-        price: calculatePrice(base, fruits, boosters) // Pricing logic
+        
     };
 
     //A custom function to display the smoothie result to the customer with full price and image along with details.
