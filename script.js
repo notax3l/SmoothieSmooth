@@ -32,6 +32,32 @@ document.getElementById("baseSelector").addEventListener("submit", function (e) 
     displaySmoothie(smoothie);
 });
 
+//NOW, creating the displaySmoothie function that we have called above to display the smoothie details.
+function displaySmoothie(smoothie) {
+    // Removing the hidden class from the order display section to show the smoothie details
+    document.querySelector(".orderDisplay").classList.remove("hidden");
+
+    // showing the smoothie details in the display section 
+    document.querySelector(".smoothIngredients h3").textContent = smoothie.name; //adding the name of the smoothie 
+
+    //creating a variable with the smoothie name and the fruit that the customer has choosen as those two are the defaults 
+    let description = `${smoothie.name} with ${smoothie.fruits.join(", ")}`;
+
+    //Now , if the customer has added any boosters, we will add them to the description of the smoothie
+    if (smoothie.boosters.length) {
+        description += ` and Boosters: ${smoothie.boosters.join(", ")}`;
+    }
+    description += `<br><strong>Sweetness:</strong> ${smoothie.sweetness}/10`;
+    //Same goes for the notes. We will add them to the description of the smoothie if the customer has added any notes.
+    if (smoothie.notes) {
+        description += `<br><strong>Notes:</strong> ${smoothie.notes}`;
+    }
+
+    document.querySelector(".IngredientDetail").innerHTML = description;
+    // Display corresponding image based on fruits selected
+    displaySmoothieImage(smoothie.fruits);
+}
+
 // Creating another js object to the paths of the images of the fruits that are used in the smoothie, so that we can display them in the smoothie result section.
 const fruitImages = {
     "Strawberry": "/images/Strawberry.jpeg", 
