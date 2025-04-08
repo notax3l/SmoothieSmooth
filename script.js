@@ -67,3 +67,15 @@ const fruitImages = {
     "Apple": "/images/Apple.jpeg"
 };
 
+//At last , creating the displaySmoothieImage function to display the image of the smoothie based on the fruits selected by the customer.
+function displaySmoothieImage(fruits) {
+
+    const smoothieImageElement = document.getElementById("smoothiePhoto");
+    if (fruits.length > 0) {
+        // Combine images of selected fruits 
+        imageSrc = fruitImages[fruits[0]]; // gives image number based on the fruit selected 
+    }
+
+    // Set the image source
+    smoothieImageElement.src = imageSrc;
+}
